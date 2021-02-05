@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.login_form {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 280px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-shadow: 0px 0px 12px 1px #b6b6b8;
+  border-radius: 5px;
+}
+
+.login_form h2 {
+  color: #0a6996;
+}
+
+.login_form .inp_div {
+  position: relative;
+  margin-top: 40px;
+
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login_form .inp_div label {
+  position: absolute;
+  margin-top: 3px;
+  left: 0px;
+  transition: 0.2s ease-in-out;
+  font-size: 12px;
+  color: #b8b9b9;
+}
+
+.login_form .inp_div input {
+  width: 250px;
+  padding: 3px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #203698;
+}
+
+.inp_div input:focus ~ label,
+.inp_div input:valid ~ label {
+  transform: translateY(-20px);
+  color: #808080;
+  font-size: 14px;
+}
+
+.inp_div input:focus {
+  border-bottom: 2px solid #6b84f1;
+}
+
+.inp_div button {
+  position: absolute;
+  right: 0px;
+  padding: 7px 20px;
+  margin-top: -10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #207398;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.inp_div button:hover {
+  background: #3cb3eb;
+  color: #004a6d;
+}
+
+#home-2 {
+  background-color: #207398;
+  padding: 6px 20px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 200px;
+  padding-bottom: 5px;
+}
+
+#home-2:hover {
+  background: #3cb3eb;
+  color: #004a6d;
+}

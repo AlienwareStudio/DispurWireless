@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Create</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="create_plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="create_plan">
+      
+        <div class="admin_heading">
+            <div class="admin_logo" style="text-align: center;">
+                <img src="logo.svg" alt="logo" style="width:50px;height:auto;">
+                <h2 style="color:#0084ac;">Dispur Wireless</h2>
+            </div>
+            <h2>Tariff Plan Management</h2>
+            <a href="create_plan.html"  style="color:#007da3;background:#baddfd;"><i class="fa fa-plus"></i>&nbsp; New Plan</a>
+            <a href="usage.html">Usage</a>
+            <a href="admin_auth.html">Logout</a>
+        </div>
+        <div class="plan_form">
+            <form action="admin.html" method="get">
+                <h2>Create Plan</h2>
+                <div class="inp_div">
+                    <input type="text" name="plan_name" id="planName" required>
+                    <label for="planName">Plan name</label>
+                </div>
+                <div class="inp_div">
+                    <input type="text" name="plan_type" id="planType" list="dataListType" required>
+                    <label for="planType">Select Type</label>
+                    <datalist id="dataListType">
+                        <option value="Data"></option>
+                        <option value="Voice"></option>
+                    </datalist> 
+                </div>
+                <div class="inp_div">
+                    <input type="text" name="plan_teriff" id="planTeriff" required>
+                    <label for="planTeriff">Plan Teriff</label>
+                </div>
+                <div class="inp_div">
+                    <input type="number" min="1" name="plan_validity" id="planValidity" required>
+                    <label for="planValidity">Validity in days</label>
+                </div>
+                <div class="inp_div">
+                    <input type="number" min="1" name="plan_price" id="planPrice" required>
+                    <label for="planPrice">Plan Rental</label>
+                </div>
+             
+                <div class="inp_div">
+                    <button type="submit">Create</button>
+                </div>
+               
+            </form>
+        </div>
+    </section>
+</body>
+</html>

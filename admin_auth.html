@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Login</title>
+    <link rel="stylesheet" href="admin_login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="admin_login">
+        <div class="login_form">
+            <form onsubmit="return validate();" action="admin.html" method="GET">
+                <h2>Admin Login</h2>
+                <div class="inp_div">
+                    <input type="text" name="username" id="admin_username" required>
+                    <label for="admin_username">Username</label>
+                </div>
+                <div class="inp_div">
+                    <input type="password" name="password" id="admin_password" required>
+                    <label for="admin_password">Password</label>
+                </div>
+                <div class="inp_div">
+                    <button type="submit">Login</button>
+                </div>
+                <a href="home1.html" id="home-2"> Home</a>
+               
+            </form>
+        </div>
+    </section>
+    <script>
+        function validate()
+        {
+            var username=document.getElementById("admin_username").value;
+            var password=document.getElementById("admin_password").value;
+
+            if(username=="admin" && password=="password")
+            {
+                return true;
+            }
+            else 
+            {
+                alert("Invalid Username or Password");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

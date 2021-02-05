@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
+        <style> </style>
+    </head>
+    <body>
+        <header class="header">
+			<div class="logo"><a href="home1.html"><img src="wifi-wireless-svgrepo-com.svg" alt="logo" height="60px" width="100px" > </a>
+				<span  class="name">Dispur Wireless</span>
+			</div>
+			<div class="nav">
+                <ul>
+                    <li><a href="home1.html">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="officallogin.html">Official Login</a></li>
+                </div>
+        </header>
+            <div class="Login-page">
+                <form onsubmit="return validate();" action="Transactiondetails.html" method="GET" class="Login">    
+                    <h1>Login</h1>
+                    <div class="inp_div">
+                        <h3 for="admin_username">Username</h3>
+                        <input type="text" name="username" id="admin_username"  placeholder="  Email" required>
+                    </div>
+                    <div class="inp_div">
+                        <h3 for="admin_password">Password</h3>
+                        <input type="password" name="password" id="admin_password" placeholder="  Password"  required>
+                    </div>
+                    <div class="inp_div">
+                        <button type="submit" id="btn">Login</button>
+                    </div> 
+                    <div class="back-to-homepage">
+                        <a href="signup.html" id="back" class="back-to-homepage"></i>Registration</a>
+                    </div>
+                </form>
+            </div>
+
+        <footer class="footer">
+            <table class="t1">
+                <tr>
+                <th>About Us</th>
+                <th>Contact Us</th>
+                <th>Services<th>
+                </tr>
+                <tr>
+                <td>The worlds fastest<br>growing network</td>
+                <td>########## or abc@gmail.com</td>
+                <td>Setup box services,<br>Recharge data etc.<td>
+                </tr>
+        </footer> 
+
+        <script type="text/javascript">
+            function validate()
+        {
+            var username=document.getElementById("admin_username").value;
+            var password=document.getElementById("admin_password").value;
+
+            if(username=="user" && password=="user")
+            {
+                return true;
+            }
+            else 
+            {
+                alert("Invalid Username or Password");
+                return false;
+            }
+        }
+        </script>
+              
+    </body>
+</html>

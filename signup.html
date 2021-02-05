@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
+        <style> </style>
+    </head>
+    <body>
+        <header class="header">
+			<div class="logo"><a href="home1.html"><img src="wifi-wireless-svgrepo-com.svg" alt="logo" height="60px" width="100px" > </a>
+				<span  class="name">Dispur Wireless</span>
+			</div>
+			<div class="nav"><ul><li><a href="home1.html">Home</a></li><li><a href="./login.html">Login</a></li><li><a href="#">Contact</a></li><li><a href="officallogin.html">official login</a></li></div>
+		</header>
+
+        <form class="form1">
+            <div class="Signup-Page">
+                <h1>Registration</h1>
+                <p>It's free and only takes a minute</p></span>
+
+                <h3 for="name">Name</h3>
+                <input type="text" id="name" name="username" required>
+                <h3>Address</h3>
+                <input type="textarea" required>
+                <h3>Email</h3>
+                <input type="email" placeholder="  Email" required>
+                <h3 for="phone">Mobile Number</h3>
+                <input type="tel" id="phone" name="phone" pattern="[6-9][0-9]{9}" required>
+                <h3 for="txtPassword">
+                    Password</h3>
+                <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
+                    class="form-control" placeholder=" Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+                <br />
+                <h3 for="txtConfirmPassword">
+                    Confirm Password</h3>
+                <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control" required
+                    placeholder=" Confirm Password" />
+                <input type="submit" id="button" onsubmit ="my_button_click_handler()">
+                <p id="terms">By Clicking the Register button you agree to our <br><span id="link">Terms & Conditions</span>  and <span id="link"> Privacy Policy</span> </p>
+            </div>
+            <div >
+                    <p class="login">Already Have an account ? <a id="login" href="./login.html"> Login Here</a> </p>
+            </div>
+        </form>
+
+        <footer class="footer">
+            <table class="t1">
+                <tr>
+                <th>About Us</th>
+                <th>Contact Us</th>
+                <th>Services<th>
+                </tr>
+                <tr>
+                <td>The worlds fastest<br>growing network</td>
+                <td>########## or abc@gmail.com</td>
+                <td>Setup box services,<br>Recharge data etc.<td>
+                </tr>
+        </footer>
+
+        <script type="text/javascript">
+            function my_button_click_handler(){
+                    alert('Registration Successfull');
+                    }
+            window.onload = function () {
+                var txtPassword = document.getElementById("txtPassword");
+                var txtConfirmPassword = document.getElementById("txtConfirmPassword");
+                txtPassword.onchange = ConfirmPassword;
+                txtConfirmPassword.onkeyup = ConfirmPassword;
+                function ConfirmPassword() {
+                    txtConfirmPassword.setCustomValidity("");
+                    if (txtPassword.value != txtConfirmPassword.value) {
+                        txtConfirmPassword.setCustomValidity("Passwords do not match.");
+
+                    }
+                    
+                }
+            }
+        </script>       
+        
+    </body>
+</html>
